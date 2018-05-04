@@ -31,6 +31,11 @@ bot.on('message', message => {
                     if (message_args[3] <= quotes.jrrt.leaves && message_args[3] > 0) message.reply(quotes.jrrt.quotes[(message_args[3] - 1)]);
                         else message.reply('I can\'t seem to find that quote in my collections, please pick a number between one and ' + quotes.jrrt.leaves);
 
+                        break;
+                    case 'sl':
+
+                    if (message_args[3] <= quotes.sl.leaves && message_args[3] > 0) message.reply(quotes.sl.quotes[(message_args[3] - 1)]);
+                        else message.reply('I can\'t seem to find that quote in my collections, please pick a number between one and ' + quotes.sl.leaves);
 
                         break;
                     case 'random':
